@@ -1,0 +1,35 @@
+Generate a Stencil configuration file for a User Management Service with the following specifications:
+
+1. Database:
+   - Provider: PostgreSQL
+   - Host: localhost
+   - Port: 5432
+   - Username: admin
+   - Password: password
+   - Database: user_management_db
+
+2. Authentication:
+   - Enabled: true
+   - Strategy: JWT
+   - Secret Key: your_secret_key_here
+
+3. Logging:
+   - Enabled: true
+   - Level: debug
+
+4. Caching:
+   - Enabled: true
+   - Provider: Redis
+   - Host: localhost
+   - Port: 6379
+
+5. CORS:
+   - Enabled: true
+   - Allowed Origins: http://localhost:3000, https://example.com
+
+6. Routes:
+   - GET /users - UserController.getUsers
+   - GET /users/:id - UserController.getUserById
+   - POST /users - UserController.createUser
+   - PUT /users/:id - UserController.updateUser
+   - DELETE /users/:id - UserController.deleteUser
